@@ -1,10 +1,10 @@
 version: 0.2
 env:
-  secrets-manager:
-    SONAR_TOKEN: 64375a46aba90bf3a0937dec156262fd2309883c
-    HOST: https://sonarcloud.io/
-    Organization: kollurinikhil
-    Project: Sample-Test
+secrets-manager:
+    LOGIN: local/sonar:sonartoken
+    HOST: local/sonar:HOST
+    Organization: local/sonar:Organization
+    Project: local/sonar:Project
 phases:
   install:
     commands:
